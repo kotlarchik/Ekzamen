@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="OOP">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.8394648829431438" prefHeight="372.0" prefWidth="600.0" style="-fx-background-color: grey;">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="417.0">
+                                 <children>
+                                    <TableView fx:id="tableOOP" prefHeight="374.0" prefWidth="502.0">
+                                      <columns>
+                                        <TableColumn fx:id="columnOOPstudent" prefWidth="75.0" text="Студент" />
+                                        <TableColumn fx:id="columnOOPdate1" prefWidth="75.0" text="2020-12-1" />
+                                        <TableColumn fx:id="columnOOPdate2" prefWidth="75.0" text="2020-12-2" />
+                                        <TableColumn fx:id="columnOOPdate3" prefWidth="75.0" text="2020-12-3" />
+                                        <TableColumn fx:id="columnOOPdate4" prefWidth="75.0" text="2020-12-4" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="85.0" />
+                          </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Java">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <SplitPane dividerPositions="0.8394648829431438" prefHeight="372.0" prefWidth="600.0">
+                                <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="417.0">
+                                        <children>
+                                            <TableView fx:id="tableJava" prefHeight="374.0" prefWidth="502.0">
+                                                <columns>
+                                                    <TableColumn fx:id="columnJavaStudent" prefWidth="75.0" text="Студент" />
+                                                    <TableColumn fx:id="columnJavadate1" prefWidth="75.0" text="2020-12-1" />
+                                                    <TableColumn fx:id="columnJavadate2" prefWidth="75.0" text="2020-12-2" />
+                                                    <TableColumn fx:id="columnJavadate3" prefWidth="75.0" text="2020-12-3" />
+                                                    <TableColumn fx:id="columnJavadate4" prefWidth="75.0" text="2020-12-4" />
+                                                </columns>
+                                                <columnResizePolicy>
+                                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                </columnResizePolicy>
+                                            </TableView>
+                                        </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="107.0" style="-fx-background-color: grey;" />
+                                </items>
+                            </SplitPane>
+                        </children></AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Eclipse">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <SplitPane dividerPositions="0.8394648829431438" prefHeight="372.0" prefWidth="600.0">
+                                <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="417.0">
+                                        <children>
+                                            <TableView fx:id="tableEclipse" prefHeight="374.0" prefWidth="502.0">
+                                                <columns>
+                                                    <TableColumn fx:id="columnEclipseStudent" prefWidth="75.0" text="Студент" />
+                                                    <TableColumn fx:id="columnEclipsedate1" prefWidth="75.0" text="2020-12-1" />
+                                                    <TableColumn fx:id="columnEclipsedate2" prefWidth="75.0" text="2020-12-2" />
+                                                    <TableColumn fx:id="columnEclipsedate3" prefWidth="75.0" text="2020-12-3" />
+                                                    <TableColumn fx:id="columnEclipsedate4" prefWidth="75.0" text="2020-12-4" />
+                                                </columns>
+                                                <columnResizePolicy>
+                                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                </columnResizePolicy>
+                                            </TableView>
+                                        </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="110.0" style="-fx-background-color: grey;" />
+                                </items>
+                            </SplitPane>
+                        </children></AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
