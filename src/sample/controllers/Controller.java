@@ -27,6 +27,9 @@ public class Controller {
     ObservableList<Blank> javaList = FXCollections.observableArrayList();
     ObservableList<Blank> eclipseList = FXCollections.observableArrayList();
 
+    ObservableList<Blank> arr1 = FXCollections.observableArrayList();
+    ObservableList<Blank> arr2 = FXCollections.observableArrayList();
+
     // Table OOP
     @FXML
     private TableView<Blank> tableOOP;
@@ -299,7 +302,7 @@ public class Controller {
     // Button save Java.
     public void pressSaveJava(ActionEvent event){
         try {
-            Blank blankJava = (Blank) tableJava.getSelectionModel().getSelectedItem();
+            Blank blankJava = tableJava.getSelectionModel().getSelectedItem();
             String sqlUpdateJava = "UPDATE blank SET dateOne = ?, dateTwo = ?, dateThree = ?, dateFour = ? WHERE id=?";
             PreparedStatement statement = connection.prepareStatement(sqlUpdateJava);
             statement.setString(1, blankJava.getDate1());
@@ -316,7 +319,7 @@ public class Controller {
     // Button save Eclipse.
     public void pressSaveEclipse(ActionEvent event){
         try {
-            Blank blankEclipse = (Blank) tableEclipse.getSelectionModel().getSelectedItem();
+            Blank blankEclipse = tableEclipse.getSelectionModel().getSelectedItem();
             String sqlUpdateEclipse = "UPDATE blank SET dateOne = ?, dateTwo = ?, dateThree = ?, dateFour = ? WHERE id=?";
             PreparedStatement statement = connection.prepareStatement(sqlUpdateEclipse);
             statement.setString(1, blankEclipse.getDate1());
