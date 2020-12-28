@@ -20,6 +20,7 @@ public class Blank {
         this.date3 = date3;
         this.date4 = date4;
     }
+    public Blank(){}
 
     // Getters
     public int getId() {
@@ -65,6 +66,11 @@ public class Blank {
     }
     public void setDate4(String date4) {
         this.date4 = date4;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s; %s; %s; %s; %s \n", getStudent(), getDate1(), getDate2(), getDate3(), getDate4());
     }
 
     @Override

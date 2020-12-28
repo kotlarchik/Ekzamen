@@ -17,7 +17,7 @@ public class ControllerWind {
 
     // Кнопка закрытия программы в окне предупреждения.
     public void pressExit(ActionEvent event){
-        buttonExit.getScene().getWindow().hide();
+        System.exit(0);
     }
 
     // Кнопка закрытия окна предупреждения.
